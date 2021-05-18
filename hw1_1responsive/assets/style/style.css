@@ -2,7 +2,7 @@
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 0.7fr;
-    grid-template-rows: 80px 1fr 1fr 1fr 1fr 1fr 80px;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
         "header header header header"
         "content-1 content-1 sidebar sidebar"
