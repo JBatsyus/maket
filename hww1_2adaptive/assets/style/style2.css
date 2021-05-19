@@ -1,0 +1,156 @@
+.conteiner {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr) 0.7fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas:
+        "header header header header"
+        "content-1 content-1 sidebar sidebar"
+        "content-1  content-1  sidebar sidebar"
+        "content-2 content-3 sidebar sidebar"
+        "content-4 content-4 sidebar sidebar"
+        "foot foot foot foot";
+    text-align: center;
+
+}
+
+.header {
+    background-color: rosybrown;
+    grid-area: header;
+}
+
+.sidebar {
+    background-color: goldenrod;
+    grid-area: sidebar;
+}
+
+.content-1 {
+    background-color: blanchedalmond;
+    grid-area: content-1;
+}
+
+.content-2 {
+    background-color: lightcoral;
+    grid-area: content-2;
+}
+
+.content-3 {
+    background-color: lavender;
+    grid-area: content-3;
+}
+
+.content-4 {
+    background-color: maroon;
+    grid-area: content-4;
+}
+
+
+.foot {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    background-color: khaki;
+    grid-area: foot;
+
+}
+
+
+.footer-item-1 {
+    background-color: hotpink;
+
+}
+
+.footer-item-2 {
+    background-color: gray;
+
+}
+
+.footer-item-3 {
+    background-color: rosybrown;
+
+}
+
+.footer-item-4 {
+    background-color: violet;
+
+}
+
+@media (min-width: 800px) {
+    .foot {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        background-color: khaki;
+        grid-area: foot;
+    }
+
+    .conteiner {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: repeat(3, 1fr) 0.7fr;
+        grid-template-rows: repeat(7, 1fr);
+        grid-template-areas:
+            "header header header header"
+            "content-1 content-1 sidebar sidebar"
+            "content-1  content-1  sidebar sidebar"
+            "content-2 content-3 sidebar sidebar"
+            "content-4 content-4 sidebar sidebar"
+            "foot foot foot foot";
+        text-align: center;
+
+    }
+
+}
+
+@media (max-width: 599px) {
+
+    .foot {
+        display: none;
+    }
+
+    .conteiner {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header header header header"
+            "sidebar sidebar sidebar sidebar"
+            "content-1 content-1 content-1 content-1"
+            "content-2 content-2 content-2 content-2"
+            "content-3 content-3 content-3 content-3"
+            "content-4 content-4 content-4 content-4";
+        text-align: center;
+        
+
+
+
+    }
+
+    .header {
+        height: 10vh;
+
+    }
+
+    .sidebar {
+        height: 20vh;
+
+    }
+
+    .content-1 {
+        height: 50vh;
+
+    }
+
+    .content-2 {
+        height: 15vh;
+
+    }
+
+    .content-3 {
+        height: 15vh;
+
+    }
+
+    .content-4 {
+        height: 15vh;
+
+    }
+}
