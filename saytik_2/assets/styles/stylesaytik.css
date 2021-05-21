@@ -179,7 +179,7 @@ main {
 
 }
 
-@media (max-width:757px) {
+@media (max-width:599px) {
 
 
     .foot {
@@ -196,7 +196,7 @@ main {
         height: 80vh;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, 1fr);
-        justify-items: start;
+        justify-items: center;
         align-items: center
     }
 
